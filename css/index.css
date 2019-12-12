@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+.rotationPhoto{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 500px;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellowgreen;
+    position: relative;
+}
+.rotationPhoto .left{
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    opacity:0.5;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+.rotationPhoto svg{
+    display: inline-block;
+    vertical-align: middle;
+}
+.rotationPhoto .right{
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    opacity:0.5;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+.rotationPhoto .left:hover,
+.rotationPhoto .right:hover{
+    opacity:1;
+}
+.rotationPhoto .smallCircle {
+    position: absolute;
+    bottom:5%;
+    height: 20px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin:auto;
+    border-radius: 20px;
+    padding:0 10px;
+}
+.rotationPhoto .smallCircle ul {
+    position: absolute;
+    height: 13px;
+    margin:auto;
+    top:0;
+    bottom:0;
+    line-height: 10px;
+}
+.rotationPhoto .smallCircle li{
+    width: 10px;
+    height:10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin:0 2px;
+}
+.rotationPhoto .smallCircle li:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,1);
+}
+.smallCircle-item {
+    background-color: rgba(255,255,255,0.5);
+}
+.smallCircle-itemCurrent {
+    background-color: rgba(255,255,255,1);
+}
+.rotationPhoto .mainPicture{
+    width:100%;
+    height: 100%;
+    background-color: coral;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 4;
+}
